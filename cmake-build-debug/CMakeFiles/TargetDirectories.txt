@@ -1,0 +1,3 @@
+/Users/poe/Desktop/proiect_so/cmake-build-debug/CMakeFiles/proiect_so.dir
+/Users/poe/Desktop/proiect_so/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/poe/Desktop/proiect_so/cmake-build-debug/CMakeFiles/rebuild_cache.dir
