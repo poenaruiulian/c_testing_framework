@@ -36,7 +36,7 @@ An example would be: `/Users/poe/Desktop/proiect_so/director1/director2/director
 
 1. I used C for the language of the project, so I had access to the `dirent.h` library which helped me read files from directories. Also, I have used the `system` function for some of the functionalities.
 2. Some of the bits are not 100% optimised, for example, the values from the **input** and **checkfile** files I have used char[100] which could be overflowed.
-3. The code itself is in `main.c` file and for every function (and some other block of codes) I have written a short documentation for a better understanding of the code.
+3. The code itself is in `main.c` file and for every function (and some other block of codes) I have written a short documentation for a better understanding of the code, this being the reason I have not detailed it here.
 
 
 
