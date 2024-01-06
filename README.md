@@ -38,6 +38,10 @@ An example would be: `/Users/poe/Desktop/proiect_so/director1/director2/director
 2. Some of the bits are not 100% optimised, for example, the values from the **input** and **checkfile** files I have used char[100] which could be overflowed.
 3. The code itself is in `main.c` file and for every function (and some other block of codes) I have written a short documentation for a better understanding of the code, this being the reason I have not detailed it here.
 
+#### Some outputs from the framework:
 
+<img width="825" alt="output1" src="https://github.com/poenaruiulian/c_testing_framework/assets/54375582/1b490826-f7f5-49c9-bc67-c497d23b0588">
+<img width="641" alt="output2" src="https://github.com/poenaruiulian/c_testing_framework/assets/54375582/85382cea-46e6-406c-a3ad-0c7745fec64b">
+<img width="645" alt="output3" src="https://github.com/poenaruiulian/c_testing_framework/assets/54375582/2f8bf567-3959-4217-83a7-f378f86898c4">
 
 
