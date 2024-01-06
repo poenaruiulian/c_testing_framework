@@ -1,0 +1,5 @@
+fisier3.c:7:51: error: expected ';' after expression
+    printf("Hello World from the third directory")
+                                                  ^
+                                                  ;
+1 error generated.

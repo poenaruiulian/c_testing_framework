@@ -23,13 +23,13 @@ directory/
                        # including other subdirectories containing C programs
 ```
 
-The framework executing function relies on this structure, the number of `input` and `checkfile` does not have any restrictions.
+The framework executing function relies on this structure, the number of `input` and `checkfile` does not have any restrictions. The project contains a folder structure (that includes the Output folder too) as an example for running the framework.
 
 2. To find the path to the folder structure and search in each directory from the structure we use the `get_path_for_each_directory` function, which needs two parameters:
 - `folderStructure` - refers to the absolute path to the folder structure
 - `firstFolderInTheStructure` - refers to the first folder in the structure
   
-An example would be: `/Users/poe/Desktop/proiect_so/director1/director2/director3/director4` and `director1`. These are necessary for the framework so we can test any folder structure from our unit, without the structure itself being in the framework's directory. 
+An example would be: `/Users/poe/Desktop/proiect_so/director1/director2/director3` and `director1`. These are necessary for the framework so we can test any folder structure from our unit, without the structure itself being in the framework's directory. 
 
 
 #### Some observations:

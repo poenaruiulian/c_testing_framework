@@ -63,7 +63,7 @@ void handle_c_file_execution(char *executableName, char *absolutePathToExecutabl
         }
         closedir(inputDirectory);
     } else {
-        printf("The inputs directory does not exist or it is not created accordingly. See official docs for more info.");
+        printf("The inputs directory does not exist or it is not created accordingly. See official docs for more info.\n");
     }
 
     // We hold the name of the check file's folder. This folder name should be specific and is described in the README.md file
@@ -96,7 +96,7 @@ void handle_c_file_execution(char *executableName, char *absolutePathToExecutabl
 
         // Then, for the specific test, we take the absolute path of the check file
         char *absolutePathToCheckFile = (char *) malloc(
-                strlen(absolutePathToCFile) + 1 + strlen(inputFilesFolder) + 1 + strlen("checkfile1.txt") + 1);
+                strlen(absolutePathToCFile) + 1 + strlen(inputFilesFolder) + 1 + strlen("checkfile1.txt.txt.txt") + 1);
         strcpy(absolutePathToCheckFile, absolutePathToCFile);
         strcat(absolutePathToCheckFile, "/");
         strcat(absolutePathToCheckFile, checkFilesFolder);
@@ -124,6 +124,8 @@ void handle_c_file_execution(char *executableName, char *absolutePathToExecutabl
             numberOfTestPassed += 1;
         } else if (resultCode == 0) {
             printf("Program executed with success, but without the expected output for test %d/%d.\n", i + 1, k);
+            printf("Current output: %s\n", programOutput);
+            printf("Expected output: %s\n", expectedOutput);
         } else {
             printf("Exit code %d Fail for test %d/%d.\n", resultCode, i + 1, k);
 
@@ -199,7 +201,7 @@ void handle_c_file_compilation(char *nameOfFile, char *pathOfFilesFolder) {
     char error[100];
     fgets(error, 100, fileReader);
     if (strcmp(error, "") != 0) {
-        printf("Compilation error on file %s. Check the Output folder for errors.txt .", nameOfFile);
+        printf("Compilation error on file %s. Check the Output folder for errors.txt .\n", nameOfFile);
     } else {
         char *aux = (char *) malloc(strlen("output_") + strlen(fileNameWithoutExt) + 1);
         strcpy(aux, "output_");
@@ -282,7 +284,7 @@ void get_path_for_each_directory(char *folderStructure, char *firstFolderInTheSt
 int main() {
 
     get_path_for_each_directory(
-            "/Users/poe/Desktop/proiect_so/director1",
+            "/Users/poe/Desktop/proiect_so/director1/director2/director3",
             "director1"
     );
 }

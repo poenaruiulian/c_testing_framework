@@ -4,5 +4,5 @@
 #include<stdio.h>
 
 int main() {
-    printf("Hello World2");
+    printf("Hello World from the third directory")
 }
